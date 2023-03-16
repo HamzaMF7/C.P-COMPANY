@@ -12,11 +12,12 @@
   --opacity: 0.5;
   --transition: 0.2s;
 }
-body {
+/* body {
   position: relative;
   overflow: hidden;
-}
+} */
 .one_page {
+  position: relative;
   overflow: hidden;
   background-color: black;
   height: 100vh;
@@ -75,9 +76,10 @@ nav .menu {
 }
 
 /*Start mobile links  */
-
+.display {
+  display: none;
+}
 .SideBarLinks {
-  /* display: none; */
   position: absolute;
   inset: 0;
   width: 100%;
@@ -110,11 +112,6 @@ nav .menu {
   padding: 5px 20px;
 }
 /*End mobile links  */
-@media (min-width: 992px) {
-  .SideBarLinks {
-    display: none;
-  }
-}
 @media (max-width: 992px) {
   nav {
     padding: 15px;

@@ -26,20 +26,20 @@
     />
   </head>
   <body>
-    <!-- Side bar links for mobile  -->
-    <div class="SideBarLinks">
-      <div class="x-mark">
-        <i class="fa-solid fa-xmark" onclick="closeSideBar()"></i>
-      </div>
-      <ul>
-        <li><a href="#">sho</a></li>
-        <li><a href="#">collection</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">contacts</a></li>
-      </ul>
-    </div>
-    <!-- Full page desktop  -->
     <div class="one_page">
+      <!-- Side bar links for mobile  -->
+      <div class="SideBarLinks">
+        <div class="x-mark">
+          <i class="fa-solid fa-xmark" onclick="closeSideBar()"></i>
+        </div>
+        <ul>
+          <li><a href="#">sho</a></li>
+          <li><a href="#">collection</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contacts</a></li>
+        </ul>
+      </div>
+      <!-- Full page desktop  -->
       <nav class="animate__animated animate__backInDown">
         <div class="links">
           <ul>
@@ -127,16 +127,15 @@
       crossorigin="anonymous"
     ></script>
     <script>
+
       let menu = document.querySelector(".SideBarLinks");
-      console.log(menu);
 
       function openSideBar() {
-        console.log("clicked");
         menu.classList.add("translate");
       }
       function closeSideBar() {
-        console.log("clicked");
         menu.classList.remove("translate");
+
       }
     </script>
   </body>
